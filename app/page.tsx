@@ -273,7 +273,7 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <div className="h-px w-12 bg-foreground/20"></div>
                   <div className="text-2xl font-mono font-light">
-                    2019 — 2025
+                    2023 — 2025
                   </div>
                 </div>
               </div>
@@ -284,56 +284,53 @@ export default function Home() {
               {[
                 {
                   year: "2023",
-                  role: "Senior Frontend Engineer",
-                  company: "Vercel",
+                  role: "Desenvolvedor Trainee",
+                  company: "MTcorp",
                   description:
-                    "Leading frontend architecture for developer tools and AI-powered features.",
-                  tech: ["React", "TypeScript", "Next.js"],
+                    "Arquitetura de automação para fluxos de sistemas e recursos com tecnologia de IA.",
+                  tech: ["Python", "IA", "RPA"],
                   highlight: true,
                   images: [
-                    "/vercel-dashboard-interface.jpg",
+                    "/team-collaboration-interface.jpg",
                     "/developer-tools-ui.jpg",
                     "/ai-features-interface.jpg",
                   ],
                 },
                 {
-                  year: "2022",
-                  role: "Frontend Engineer",
-                  company: "Linear",
+                  year: "2025",
+                  role: "Dev Front-end",
+                  company: "Nuuvik",
                   description:
                     "Built performant interfaces for project management and team collaboration.",
-                  tech: ["React", "GraphQL", "Framer Motion"],
+                  tech: ["Next", "MonoDB", "Python", "TS", "Docker"],
                   images: [
-                    "/linear-project-management.jpg",
-                    "/team-collaboration-interface.jpg",
-                    "/task-management-ui.jpg",
+                    "/homenuuvik.png",
+                    "/servicesnuuvik.png",
+                    "/supnuuvik.png",
                   ],
                 },
                 {
-                  year: "2021",
-                  role: "Full Stack Developer",
-                  company: "Stripe",
+                  year: "2025",
+                  role: "Full Stack",
+                  company: "Nom",
                   description:
-                    "Developed payment infrastructure and merchant-facing dashboard features.",
-                  tech: ["Ruby", "React", "PostgreSQL"],
+                    "Estrutura builder de paginas com integração de pagamento e serviços de hospedagem",
+                  tech: ["React", "TS", "Supabase"],
                   highlight: true,
-                  images: [
-                    "/stripe-payment-dashboard.jpg",
-                    "/merchant-interface.jpg",
-                    "/payment-analytics.jpg",
-                  ],
+                  images: ["/nomhome.png", "/nomarticle.png", "/nomfooter.png"],
                 },
                 {
-                  year: "2019",
-                  role: "Software Engineer",
-                  company: "Airbnb",
+                  year: "2025",
+                  role: "Full Stack",
+                  company: "Nuuvik.AI",
                   description:
                     "Created booking flow optimizations and host management tools.",
-                  tech: ["React", "Node.js", "MySQL"],
+                  tech: ["React", "PostgresSQL", "N8N"],
                   images: [
-                    "/airbnb-booking-interface.jpg",
-                    "/host-management-dashboard.jpg",
-                    "/property-listing-ui.jpg",
+                    "/SaaShome.png",
+                    "/SaaService.png",
+                    "/SaaStestimoials.png",
+                    "/Screenshot (156).png",
                   ],
                 },
               ].map((job, index) => (
@@ -381,9 +378,7 @@ export default function Home() {
                                 {job.company}
                               </div>
                               {job.highlight && (
-                                <div className="px-2 py-0.5 bg-foreground/10 rounded text-xs font-medium">
-                                  Featured
-                                </div>
+                                <div className="px-2 py-0.5 bg-transparent"></div>
                               )}
                             </div>
                           </div>
@@ -430,22 +425,30 @@ export default function Home() {
                 Apresentando {[2023, 2022, 2021, 2019].length} projetos ao longo
                 de {new Set([2023, 2022, 2021, 2019]).size} anos
               </div>
-              <Button variant="ghost" className="rounded-xl group">
-                <span>Ver mais projetos</span>
-                <svg
-                  className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+              <a
+                target="_blank"
+                href="https://github.com/BrandonOficial?tab=repositories"
+              >
+                <Button
+                  variant="ghost"
+                  className="rounded-xl group cursor-pointer"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Button>
+                  <span>Ver mais projetos</span>
+                  <svg
+                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Button>
+              </a>
             </div>
           </div>
         </section>
@@ -973,15 +976,15 @@ export default function Home() {
                   </p>
                 </div>
                 <div className="flex justify-start lg:justify-end">
-                  <Link
+                  <a
                     href="https://calendar.app.google/fxWEgwoB3VwmUnjVA"
-                    passHref
+                    target="_blank"
                   >
                     <Button
                       size="lg"
                       className="rounded-xl px-8 group cursor-pointer"
                     >
-                      <span>Agende uma ligação</span>
+                      <span>Agendar chamada</span>
                       <svg
                         className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
                         fill="none"
@@ -996,7 +999,7 @@ export default function Home() {
                         />
                       </svg>
                     </Button>
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>
