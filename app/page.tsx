@@ -511,37 +511,16 @@ export default function Home() {
             <div className="space-y-8">
               {[
                 {
-                  title: "The Future of Web Development",
+                  image:
+                    "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=600&fit=crop",
+                  title:
+                    "Desvendando o Big O e as Estruturas de Dados Essenciais: Uma Aula Rápida",
                   excerpt:
-                    "Exploring how AI and automation are reshaping the way we build for the web.",
-                  date: "Dec 2024",
-                  readTime: "5 min",
+                    "Explorando como os fundamentos da notação Big O e estruturas básicas.",
+                  date: "Ago 2025",
+                  readTime: "7 min",
                   featured: true,
-                  category: "Development",
-                },
-                {
-                  title: "Design Systems at Scale",
-                  excerpt:
-                    "Lessons learned from building and maintaining design systems across multiple products.",
-                  date: "Nov 2024",
-                  readTime: "8 min",
-                  category: "Design",
-                },
-                {
-                  title: "Performance-First Development",
-                  excerpt:
-                    "Why performance should be a first-class citizen in your development workflow.",
-                  date: "Oct 2024",
-                  readTime: "6 min",
-                  category: "Development",
-                },
-                {
-                  title: "The Art of Code Review",
-                  excerpt:
-                    "Building better software through thoughtful and constructive code reviews.",
-                  date: "Sep 2024",
-                  readTime: "4 min",
-                  category: "Process",
+                  category: "Desenvolvimento",
                 },
               ].map((post, index) => {
                 // Primeiro artigo em destaque
@@ -576,27 +555,38 @@ export default function Home() {
                             {post.excerpt}
                           </p>
 
-                          <div className="flex items-center gap-2 text-sm pt-4 group-hover:gap-3 transition-all duration-300">
-                            <span className="font-medium">Ler artigo</span>
-                            <svg
-                              className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
-                              fill="none"
-                              stroke="currentColor"
-                              viewBox="0 0 24 24"
-                            >
-                              <path
-                                strokeLinecap="round"
-                                strokeLinejoin="round"
-                                strokeWidth={2}
-                                d="M17 8l4 4m0 0l-4 4m4-4H3"
-                              />
-                            </svg>
-                          </div>
+                          <a
+                            href="https://nom-blog-newsletter-phoz.vercel.app/article/1"
+                            target="_blank"
+                          >
+                            <div className="flex items-center gap-2 text-sm pt-4 group-hover:gap-3 transition-all duration-300">
+                              <span className="font-medium">Ler artigo</span>
+                              <svg
+                                className="w-5 h-5 group-hover:translate-x-1 transition-transform duration-300"
+                                fill="none"
+                                stroke="currentColor"
+                                viewBox="0 0 24 24"
+                              >
+                                <path
+                                  strokeLinecap="round"
+                                  strokeLinejoin="round"
+                                  strokeWidth={2}
+                                  d="M17 8l4 4m0 0l-4 4m4-4H3"
+                                />
+                              </svg>
+                            </div>
+                          </a>
                         </div>
 
-                        {/* Imagem placeholder ou ilustração */}
+                        {/* Imagem do artigo */}
                         <div className="lg:col-span-5">
-                          <div className="aspect-[4/3] rounded-xl bg-gradient-to-br from-foreground/10 to-foreground/5 border border-foreground/10 group-hover:border-foreground/20 transition-colors duration-700"></div>
+                          <div className="aspect-[4/3] rounded-xl overflow-hidden border border-foreground/10 group-hover:border-foreground/20 transition-colors duration-700">
+                            <img
+                              src={post.image}
+                              alt={post.title}
+                              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                            />
+                          </div>
                         </div>
                       </div>
                     </article>
@@ -611,28 +601,14 @@ export default function Home() {
               <div className="grid lg:grid-cols-3 gap-6">
                 {[
                   {
-                    title: "Design Systems at Scale",
+                    image:
+                      "https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800&h=600&fit=crop",
+                    title: "Um Mergulho Profundo no Artesanato do Clean Code",
                     excerpt:
-                      "Lessons learned from building and maintaining design systems across multiple products.",
-                    date: "Nov 2024",
-                    readTime: "8 min",
-                    category: "Design",
-                  },
-                  {
-                    title: "Performance-First Development",
-                    excerpt:
-                      "Why performance should be a first-class citizen in your development workflow.",
-                    date: "Oct 2024",
-                    readTime: "6 min",
-                    category: "Development",
-                  },
-                  {
-                    title: "The Art of Code Review",
-                    excerpt:
-                      "Building better software through thoughtful and constructive code reviews.",
-                    date: "Sep 2024",
-                    readTime: "4 min",
-                    category: "Process",
+                      "Lições aprendidas com a construção e manutenção de sistemas de design em vários",
+                    date: "Ago 2025",
+                    readTime: "13 min de leitura",
+                    category: "Desenvolvimento",
                   },
                 ].map((post, index) => (
                   <article
@@ -640,8 +616,16 @@ export default function Home() {
                     className="group relative p-6 border border-foreground/10 rounded-xl hover:border-foreground/30 transition-all duration-500 cursor-pointer bg-background hover:bg-foreground/[0.02]"
                   >
                     <div className="space-y-4">
-                      {/* Imagem placeholder compacta */}
-                      <div className="aspect-[16/9] rounded-lg bg-gradient-to-br from-foreground/5 to-foreground/[0.02] border border-foreground/10 group-hover:border-foreground/20 transition-colors duration-500"></div>
+                      {/* Imagem do artigo */}
+                      <div className="lg:col-span-5">
+                        <div className="aspect-[16/9] rounded-xl overflow-hidden border border-foreground/10 group-hover:border-foreground/20 transition-colors duration-700">
+                          <img
+                            src={post.image}
+                            alt={post.title}
+                            className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                          />
+                        </div>
+                      </div>
 
                       {/* Meta info */}
                       <div className="flex items-center justify-between">
@@ -666,19 +650,24 @@ export default function Home() {
                         <span className="text-xs text-muted-foreground font-mono">
                           {post.date}
                         </span>
-                        <svg
-                          className="w-4 h-4 text-muted-foreground group-hover:translate-x-1 transition-transform duration-300"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
+                        <a
+                          href="https://nom-blog-newsletter-phoz.vercel.app/article/2"
+                          target="_blank"
                         >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M17 8l4 4m0 0l-4 4m4-4H3"
-                          />
-                        </svg>
+                          <svg
+                            className="w-4 h-4 text-muted-foreground group-hover:translate-x-1 transition-transform duration-300"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M17 8l4 4m0 0l-4 4m4-4H3"
+                            />
+                          </svg>
+                        </a>
                       </div>
                     </div>
                   </article>
@@ -688,26 +677,31 @@ export default function Home() {
 
             {/* CTA para ver todos os artigos */}
             <div className="flex justify-center pt-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="rounded-xl group hover:bg-foreground/5"
+              <a
+                href="https://nom-blog-newsletter-phoz.vercel.app/"
+                target="_blank"
               >
-                <span>Outros Artigos</span>
-                <svg
-                  className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-xl group hover:bg-foreground/5"
                 >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M17 8l4 4m0 0l-4 4m4-4H3"
-                  />
-                </svg>
-              </Button>
+                  <span>Outros Artigos</span>
+                  <svg
+                    className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M17 8l4 4m0 0l-4 4m4-4H3"
+                    />
+                  </svg>
+                </Button>
+              </a>
             </div>
           </div>
         </section>
