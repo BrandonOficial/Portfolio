@@ -66,7 +66,9 @@ export default function Home() {
         {/* Hero Section */}
         <header
           id="intro"
-          ref={(el) => (sectionsRef.current[0] = el)}
+          ref={(el) => {
+            sectionsRef.current[0] = el;
+          }}
           className="min-h-screen flex items-center opacity-0 relative overflow-hidden"
         >
           <div className="relative pt-24 w-full">
@@ -240,7 +242,9 @@ export default function Home() {
 
         <section
           id="work"
-          ref={(el) => (sectionsRef.current[1] = el)}
+          ref={(el) => {
+            sectionsRef.current[1] = el;
+          }}
           className="min-h-screen py-20 sm:py-32 opacity-0 relative"
         >
           {/* Background decorativo */}
@@ -455,7 +459,9 @@ export default function Home() {
 
         <section
           id="thoughts"
-          ref={(el) => (sectionsRef.current[2] = el)}
+          ref={(el) => {
+            sectionsRef.current[2] = el;
+          }}
           className="min-h-screen py-20 sm:py-32 opacity-0 relative"
         >
           {/* Background decorativo */}
@@ -708,7 +714,9 @@ export default function Home() {
 
         <section
           id="connect"
-          ref={(el) => (sectionsRef.current[3] = el)}
+          ref={(el) => {
+            sectionsRef.current[3] = el;
+          }}
           className="py-20 sm:py-32 opacity-0 relative"
         >
           {/* Background decorativo */}
