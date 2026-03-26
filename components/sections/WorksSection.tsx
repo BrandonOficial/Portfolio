@@ -1,6 +1,5 @@
 "use client";
 
-import Link from "next/link";
 import { motion, Variants } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ProjectCarousel } from "@/components/project-carousel";
