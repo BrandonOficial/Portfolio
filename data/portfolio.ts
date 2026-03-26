@@ -53,7 +53,7 @@ export const PROJECTS: Project[] = [
       "/developer-tools-ui.jpg",
       "/ai-features-interface.jpg",
     ],
-    liveUrl: "https://mtcorp.com.br",
+    liveUrl: "",
     githubUrl: "",
   },
   {
@@ -65,7 +65,7 @@ export const PROJECTS: Project[] = [
     tech: ["Next", "MongoDB", "Python", "TS", "Docker"],
     images: ["/homenuuvik.png", "/servicesnuuvik.png", "/supnuuvik.png"],
     liveUrl: "https://nuuvik.com",
-    githubUrl: "https://github.com/BrandonOficial/nuuvik",
+    githubUrl: "",
   },
   {
     year: "2025",
@@ -75,8 +75,8 @@ export const PROJECTS: Project[] = [
     tech: ["React", "TS", "Supabase"],
     highlight: true,
     images: ["/nomhome.png", "/nomarticle.png", "/nomfooter.png"],
-    liveUrl: "https://nom-blog.com",
-    githubUrl: "https://github.com/BrandonOficial/nom-blog",
+    liveUrl: "https://nom-blog-newsletter-phoz.vercel.app/",
+    githubUrl: "https://github.com/BrandonOficial/NomBlogNewsletter",
   },
   {
     year: "2026",
@@ -85,7 +85,8 @@ export const PROJECTS: Project[] = [
     description: "Extensão Vscode de produtividade e integração",
     tech: ["TS", "Vscode"],
     images: ["/NoKanban.png"],
-    liveUrl: "https://marketplace.visualstudio.com/",
+    liveUrl:
+      "https://marketplace.visualstudio.com/items?itemName=nokanban-dev.nokanban",
     githubUrl: "https://github.com/BrandonOficial/nokanban",
   },
   {
@@ -102,7 +103,7 @@ export const PROJECTS: Project[] = [
       "/EncomendasLogistic.png",
     ],
     liveUrl: "",
-    githubUrl: "https://github.com/BrandonOficial/logistica",
+    githubUrl: "https://github.com/BrandonOficial/simple-dashboard",
   },
 ];
 
