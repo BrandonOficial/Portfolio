@@ -25,7 +25,7 @@ export default function Home() {
           }
         });
       },
-      { threshold: 0.3, rootMargin: "0px 0px -20% 0px" }
+      { threshold: 0.3, rootMargin: "0px 0px -20% 0px" },
     );
 
     sectionsRef.current.forEach((section) => {
@@ -89,7 +89,7 @@ export default function Home() {
                   <div className="inline-flex items-center gap-2 bg-transparent px-4 py-2 backdrop-blur-sm">
                     <div className="w-1.5 h-1.5 bg-green-500 rounded-full animate-pulse"></div>
                     <span className="text-xs font-mono tracking-wider text-muted-foreground">
-                      FREE.DEV / 2025
+                      FREE.DEV / 2026
                     </span>
                   </div>
 
@@ -166,7 +166,7 @@ export default function Home() {
                         </span>
                       </div>
                       <div className="text-xs text-muted-foreground font-mono">
-                        2025
+                        2026
                       </div>
                     </div>
                     <div className="space-y-3">
@@ -277,7 +277,7 @@ export default function Home() {
                 <div className="flex items-center gap-3">
                   <div className="h-px w-12 bg-foreground/20"></div>
                   <div className="text-2xl font-mono font-light">
-                    2023 — 2025
+                    2023 — 2026
                   </div>
                 </div>
               </div>
@@ -287,7 +287,7 @@ export default function Home() {
             <div className="space-y-8">
               {[
                 {
-                  year: "2023",
+                  year: "2024",
                   role: "Desenvolvedor Trainee",
                   company: "MTcorp",
                   description:
@@ -305,7 +305,7 @@ export default function Home() {
                   role: "Dev Front-end",
                   company: "Nuuvik",
                   description:
-                    "Built performant interfaces for project management and team collaboration.",
+                    "Estrutura builder de paginas com integração de pagamento e serviços de hospedagem.",
                   tech: ["Next", "MonoDB", "Python", "TS", "Docker"],
                   images: [
                     "/homenuuvik.png",
@@ -317,24 +317,31 @@ export default function Home() {
                   year: "2025",
                   role: "Full Stack",
                   company: "Nom",
-                  description:
-                    "Estrutura builder de paginas com integração de pagamento e serviços de hospedagem",
+                  description: "Blog com sistema próprio de criação de artigo",
                   tech: ["React", "TS", "Supabase"],
                   highlight: true,
                   images: ["/nomhome.png", "/nomarticle.png", "/nomfooter.png"],
                 },
                 {
-                  year: "2025",
-                  role: "Full Stack",
-                  company: "Nuuvik.AI",
+                  year: "2026",
+                  role: "Extensão",
+                  company: "NoKanban",
+                  description: "Extensão Vscode de produtividade e integração",
+                  tech: ["TS", "Vscode"],
+                  images: ["/NoKanban.png"],
+                },
+                {
+                  year: "2026",
+                  role: "Logística Encomendas",
+                  company: "",
                   description:
-                    "Created booking flow optimizations and host management tools.",
-                  tech: ["React", "PostgresSQL", "N8N"],
+                    "Sistema Logístico de encomendas registro e retirada de correspondências e entregas",
+                  tech: ["TS", "React", "SQL", "REST"],
                   images: [
-                    "/SaaShome.png",
-                    "/SaaService.png",
-                    "/SaaStestimoials.png",
-                    "/Screenshot (156).png",
+                    "/DashboardLogistic.png",
+                    "/ConfiguracoesLogistic.png",
+                    "/MoradoresLogistic.png",
+                    "/EncomendasLogistic.png",
                   ],
                 },
               ].map((job, index) => (
@@ -426,8 +433,8 @@ export default function Home() {
             {/* Footer da seção */}
             <div className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-foreground/10">
               <div className="text-sm text-muted-foreground">
-                Apresentando {[2023, 2022, 2021, 2019].length} projetos ao longo
-                de {new Set([2023, 2022, 2021, 2019]).size} anos
+                Apresentando {[2026, 2025, 2024, 2021, 2019].length} projetos ao
+                longo de {new Set([2026, 2025, 2024]).size} anos
               </div>
               <a
                 target="_blank"
